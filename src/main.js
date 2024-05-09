@@ -12,7 +12,7 @@ let blogBox = new WinBox({
     bottom: "10%",
     left: 5,
     background: "#252b4e",
-    url: "https://git.olivermharris.co.uk/blog",
+    url: "https://olivermharris.co.uk/blog",
 });
 
 blogBox.x = 250;
