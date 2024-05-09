@@ -1,3 +1,7 @@
+function detectMob() {
+    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+  }
+
 document.getElementById('app-menu').onclick =() => {
     
 };
@@ -18,3 +22,7 @@ let blogBox = new WinBox({
 blogBox.x = 250;
 blogBox.y = 250;
 blogBox.move();
+
+if (detectMob()) {
+    blogBox.maximize(true);
+}
