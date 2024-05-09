@@ -3,6 +3,13 @@ const applications = {
 }
 
 const commands = {
+    'icons': {
+        'hint': "Icons By icons8.com Go Show Them A Visit",
+        'response': 'Thankyou for checking out icons8,\r\n their icons add to the feel of the operating design and bring it to life.',
+        'function': () => {
+            window.open("https://icons8.com", '_blank').focus();
+        },
+    },
     'help': {
         'hint': "Displays a list of available commands",
         'function': () => {
