@@ -1,4 +1,4 @@
-new WinBox({
+window.terminal = new WinBox({
     index: 1,
     title: "Parrot Terminal",
     maxHeight: 400,
@@ -32,7 +32,9 @@ window.user_meta = `┌─[✗]─[envoh@parrot]─[${window.directory}]\r\n└�
 
 window.term.open(document.getElementById('terminal'));
 
+window.term.write(" ~ Icons By icons8.com ~ \r\n");
 window.term.write(" ~ Type help for a list of available commands ~ \r\n");
+
 
 window.term.write(`${window.user_meta}`);
 window.term.onKey(function(data) {
